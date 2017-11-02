@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <script defer type="text/javascript" src="./js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.svg" alt="">
+            <span>FACILITY TEST</span>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#FULL SLIDER">FULL SLIDER</a></li>
+                <li><a href="#MINI SLIDER">MINI SLIDER</a></li>
+                <li><a class="active" href="#COLUMNS">COLUMNS</a></li>
+                <li><a href="#ARTICLE">ARTICLE</a></li>
+                <li><a href="#MAP">MAP</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div id="modal_form_mobile">
+        <span id="modal_close_mobile">&#215;</span>
+        <p>THIS IS POPUP</p>
+        <form action="name.php">
+            <input placeholder="Your name" type="text" align="center">
+            <input placeholder="Your e-mail" type="text" align="center">
+        <button type="submit">SUBMIT</button>
+        </form>
+
+    </div>
+    <div id="overlay_mobile"></div>
+
+    <button class="modal_mobile" >POPUP</button>
+
+
+    <main>
+        <div class="sliderContainer">
+            <ul class="sliderContainer__slides">
+                <li>
+                    <div class="description">
+                        <h1>FULL SLIDER</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Adipisci atque aut beatae culpa dicta, dolor eligendi ipsam,
+                            laboriosam maiores maxime molestiae molestias nesciunt nobis
+                            non nulla odit omnis possimus praesentium provident quis quod,
+                            reiciendisrepudiandae similique tempore ullam velit voluptatem!</p>
+                        <div id="modal_form">
+                            <span id="modal_close">&#215;</span>
+                            <p>This is popup</p>
+                            <button class="close">CLOSE</button>
+                        </div>
+                        <div id="overlay"></div>
+                        <button class="modal">POPUP</button>
+                    </div>
+                    <img src="./img/slider3.jpg" alt="">
+                </li>
+                <li>
+                    <div class="description">
+                        <h1>FULL SLIDER 2</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Adipisci atque aut beatae culpa dicta, dolor eligendi ipsam,
+                            laboriosam maiores maxime molestiae molestias nesciunt nobis
+                            non nulla odit omnis possimus praesentium provident quis quod,
+                            reiciendisrepudiandae similique tempore ullam velit voluptatem!</p>
+                        <button class="modal">POPUP</button>
+                    </div>
+                    <img src="./img/slider2.jpg" alt=""></li>
+                <li>
+                    <div class="description">
+                        <h1>FULL SLIDER 3</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Adipisci atque aut beatae culpa dicta, dolor eligendi ipsam,
+                            laboriosam maiores maxime molestiae molestias nesciunt nobis
+                            non nulla odit omnis possimus praesentium provident quis quod,
+                            reiciendisrepudiandae similique tempore ullam velit voluptatem!</p>
+                        <button class="modal">POPUP</button>
+                    </div>
+                    <img src="./img/slider.jpg" alt="">
+                </li>
+            </ul>
+            <div class="sliderContainer__buttons">
+                <div class="sliderContainer__buttons_prev">
+                    <img src="./img/arrow.svg" alt="">
+                </div>
+                <div class="sliderContainer__buttons_next">
+                    <img src="./img/arrow.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+                <div class="smallsliderContainer__buttons_prev">
+                    <img class="prevsmall" src="./img/arrow.svg" alt="">
+                </div>
+                <div class="smallsliderContainer">
+                <ul class="smallsliderContainer__slides">
+                <li>
+                    <img src="./img/slider3.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/slider2.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/slider.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/slider3.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/slider2.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/slider.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/slider3.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/slider2.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/slider.jpg" alt="">
+                </li>
+                </ul>
+                </div>
+                <div class="smallsliderContainer__buttons_next">
+                    <img src="./img/arrow.svg" alt="">
+                </div>
+
+            </div>
+        <div class="buttonsToClick">
+            <img class="buttonsToClickPrev" src="./img/arrow.svg" alt="">
+            <img class="buttonsToClickNext" src="./img/arrow.svg" alt="">
+        </div>
+        <div id="columns">
+            <h1>COLUMNS</h1>
+            <div class="columnsboxes">
+                <div>
+                    <p>Title lorem ipsum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum officia quas quos rerum voluptate? Beatae debitis deleniti distinctio eius eos error ex excepturi fugiat hic impedit, laboriosam maxime minima nesciunt optio reprehenderit, repudiandae sunt suscipit voluptates! Beatae laboriosam quos voluptas.</p>
+                </div>
+                <div>
+                    <p>Title lorem ipsum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci corporis deserunt dolor earum ipsum minus neque soluta! A accusamus alias assumenda at blanditiis culpa cum, deleniti dolorum eaque est ex iusto, labore magni mollitia neque perferendis quae quisquam recusandae repellendus reprehenderit repudiandae rerum sapiente similique soluta voluptates. Perferendis, porro.</p>
+                </div>
+                <div>
+                    <p>Title lorem ipsum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores placeat sint. Dignissimos ex explicabo hic, illum nostrum optio pariatur totam. Aliquam aliquid aperiam, consequatur culpa cupiditate eius fugiat id illum iusto magni modi mollitia natus nostrum odio provident, quibusdam quos sapiente ut vel voluptas?</p>
+                </div>
+                <div>
+                    <p>Title lorem ipsum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ipsa placeat quae. Accusantium adipisci aliquam consequatur corporis cupiditate debitis deleniti, dignissimos dolor doloremque esse fugit impedit incidunt ipsam iste labore obcaecati officiis provident quas quasi quibusdam quisquam saepe sequi sit tempora tempore veritatis vitae voluptatum. Accusamus incidunt nam nesciunt tempora?</p>
+                </div>
+                <div>
+                    <p>Title lorem ipsum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eos, fugiat hic ipsa iste magni optio placeat quod sunt vero!</p>
+                </div>
+                <div>
+                    <p>Title lorem ipsum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae enim, exercitationem ipsam magni nemo non tempora unde velit? Cupiditate ducimus eligendi exercitationem explicabo id, maiores modi qui quod totam voluptatum. Accusamus asperiores culpa, eum incidunt inventore ipsa ipsum laboriosam neque odit, porro possimus provident qui quia quo quos sapiente.</p>
+                </div>
+            </div>
+            <div id="article">
+                <h1>ARTICLE</h1>
+                <div>
+                    <h3>TITLE H3</h3>
+                    <p>Lorem ipsum dolor sit amet, con hic, inventore ipvoluptas voluptatum. Aliquid assumenda eos modi necessitatibus placeat, quam veniam.<br> Alias architecto at corporis doloreatus nostr saepe sequi soluta vero. Consequuntur, in, sapiente! Aliquam, amet aspernatur assumenda autem beatae consequuntur cum dolor dolorem doloribus ducimus ea eius eum ex fugiat illo laborum magnam magni minus modi mollitia nemo neque numquam praesentium quae quibusdam quod quos sunt veniam veritatis vero vitae voluptate voluptatibus, voluptatum? Corporis eaque excepturi impedit nulla quisquam reprehenderit voluptas. <strong>Ab animi at blanditiis</strong> culpa cum cupiditate debitis doloremquenon odit, perferendis possimus, recusandae rerum tempora tempore ut vel veritatis vero! Consequatur illo neque nobis quisquam repellat repellendus voluptas voluptatibus. Architecto beatae consectetur dignissimos doloribus eligendi expedita, facilis fugiat illum impedit in iste labore laborum magni maiores minus molestiae natus officia perferendis quaerat quam quisquam, quo recusandae rerum sed temporibus ut, voluptas. Alias aliquid blanditiis cumque deserunt dicta dignissimos dolores, expedita incidunt minima molestias non obcaecati perferendis, praesentium sequi soluta, veniam veritatis. Alias at corporis iusto magnam maiores molestias odio officiis,
+                        <a href="#bla">pariatur perspiciatis</a>  quasi reiciendis tempora veniam! Fugit inventore laboriosam laborum maiores modi perspiciatis, quisquam veritatis.</p>
+                </div>
+                <div>
+                    <h3>TITLE H3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid <span>consequatur esse molestiae obcaecati porro possimus rem vitae voluptatum. A alias distinctio illo ipsum.</span> At autem corporis cupiditate distinctio ea error, est explicabo id iusto, labore nesciunt nisi officiis porro quaerat quo voluptate voluptatem voluptates?<br> Alias animi at beatae commodi consequatur dolore doloremque ducimus et excepturi facere id incidunt inventore ipsa ipsum iure labore libero magni maxime minima molestiae neque nesciunt nihil nobis omnis perspiciatis quae quas ratione recusandae repellendus saepe sequi sit, veniam, veritatis. Consectetur doloribus magni molestiae nulla quas temporibus vero. Amet, aspernatur dolor <span>doloremque ea eius eligendi error eum maiores</span> mollitia necessitatibus pariatur porro quibusdam quidem, reprehenderit voluptatem. Facere, harum voluptate! Aperiam aut facilis ipsam.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d325055.8929348405!2d30.6995127!3d50.4690504!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1509484614881" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,533 @@
+body {
+  position: relative;
+  width: 100%;
+  margin: 0; }
+  body header {
+    width: 100%;
+    height: 80px; }
+    body header:after {
+      content: '';
+      clear: both;
+      display: table; }
+    body header .logo {
+      padding-left: 80px;
+      float: left;
+      color: #646464;
+      line-height: 80px; }
+      body header .logo img {
+        vertical-align: middle;
+        width: 70px;
+        height: 50px; }
+      body header .logo span {
+        padding-left: 30px;
+        font-weight: bold; }
+    body header .menu {
+      padding-right: 80px;
+      float: right;
+      line-height: 80px; }
+      body header .menu ul {
+        margin: 0;
+        padding: 0; }
+      body header .menu li {
+        list-style: none;
+        display: inline-block; }
+        body header .menu li:not(:first-child) {
+          margin-left: 25px; }
+      body header .menu a {
+        text-decoration: none;
+        color: #646464; }
+        body header .menu a:hover {
+          color: #0700ef; }
+  body #modal_form {
+    width: 570px;
+    height: 330px;
+    background: #fff;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -285px;
+    display: none;
+    opacity: 0;
+    z-index: 5; }
+    body #modal_form p {
+      margin: 85px auto;
+      color: #646464; }
+  body #modal_form_mobile #modal_close_mobile {
+    font-size: 25px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    display: block;
+    color: black; }
+  body #overlay_mobile {
+    z-index: 3;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none; }
+  body main .sliderContainer {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden; }
+    body main .sliderContainer__slides {
+      position: relative;
+      height: 100%;
+      padding-left: 0;
+      margin: 0;
+      width: 100%; }
+      body main .sliderContainer__slides li {
+        list-style: none;
+        position: relative;
+        display: table;
+        float: left;
+        height: 100%; }
+        body main .sliderContainer__slides li div {
+          width: 100%;
+          text-align: center;
+          position: absolute;
+          color: white; }
+          body main .sliderContainer__slides li div h1 {
+            font-size: 55px;
+            margin-top: 140px; }
+          body main .sliderContainer__slides li div p {
+            text-transform: uppercase;
+            width: 510px;
+            margin: 0 auto; }
+          body main .sliderContainer__slides li div .modal, body #modal_form main .sliderContainer__slides li div button, body main .sliderContainer__slides li div #modal_form button, #modal_form body main .sliderContainer__slides li div button {
+            margin: 20px auto 0;
+            width: 170px;
+            height: 50px;
+            background-color: #615e5e;
+            border: 1px solid white;
+            outline: none;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            position: relative;
+            display: block; }
+            body main .sliderContainer__slides li div .modal:active, body #modal_form main .sliderContainer__slides li div button:active, body main .sliderContainer__slides li div #modal_form button:active, #modal_form body main .sliderContainer__slides li div button:active {
+              margin-top: 18px; }
+      body main .sliderContainer__slides:after {
+        content: "";
+        clear: both;
+        display: table; }
+      body main .sliderContainer__slides img {
+        display: table-cell;
+        width: 100%;
+        height: 640px; }
+    body main .sliderContainer__buttons_prev, body main .sliderContainer__buttons_next {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      border: 1px solid white;
+      cursor: pointer;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      top: 50%;
+      left: 0;
+      margin-left: 80px; }
+      body main .sliderContainer__buttons_prev:hover, body main .sliderContainer__buttons_next:hover {
+        background-color: white; }
+      body main .sliderContainer__buttons_prev img, body main .sliderContainer__buttons_next img {
+        height: 50px;
+        width: 25px;
+        -webkit-transform: rotate(180deg) translateX(-50%);
+            -ms-transform: rotate(180deg) translateX(-50%);
+                transform: rotate(180deg) translateX(-50%); }
+    body main .sliderContainer__buttons_next {
+      left: inherit;
+      margin-right: 80px;
+      right: 0; }
+      body main .sliderContainer__buttons_next img {
+        -webkit-transform: translateX(50%);
+            -ms-transform: translateX(50%);
+                transform: translateX(50%);
+        height: 50px;
+        width: 25px; }
+  body main .container {
+    margin: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  body main .smallsliderContainer__buttons_prev img {
+    height: 50px;
+    width: 25px;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  body main .smallsliderContainer {
+    position: relative;
+    background-color: #fff;
+    width: 990px;
+    overflow: hidden;
+    margin: 0 40px; }
+    body main .smallsliderContainer__slides {
+      position: relative;
+      height: 100%;
+      padding-left: 0;
+      margin: 0;
+      width: 100%; }
+      body main .smallsliderContainer__slides li {
+        margin: 0 2px;
+        list-style: none;
+        position: relative;
+        display: table;
+        float: left; }
+        body main .smallsliderContainer__slides li img {
+          display: table-cell;
+          width: 100%;
+          height: 180px; }
+  body main .smallsliderContainer__buttons_next img {
+    height: 50px;
+    width: 25px;
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg); }
+  body main .buttonsToClick {
+    display: none;
+    text-align: center; }
+    body main .buttonsToClick img {
+      padding: 0 40px;
+      width: 20px;
+      height: 20px; }
+      body main .buttonsToClick img:first-child {
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg); }
+  body main #columns {
+    color: #646464; }
+    body main #columns h1 {
+      position: relative;
+      text-align: center; }
+      body main #columns h1:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        width: 30px;
+        left: 50%;
+        margin-left: -15px;
+        height: 2px;
+        background-color: #646464; }
+    body main #columns .columnsboxes {
+      margin: auto;
+      width: 1000px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      body main #columns .columnsboxes div {
+        width: 300px; }
+        body main #columns .columnsboxes div p:first-child {
+          font-weight: bold; }
+  body main #article {
+    width: 770px;
+    margin: 0 auto; }
+    body main #article h1 {
+      margin: 25px 0 25px;
+      position: relative;
+      text-align: center; }
+      body main #article h1:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        width: 30px;
+        left: 50%;
+        margin-left: -15px;
+        height: 2px;
+        background-color: #646464; }
+    body main #article div h3 {
+      margin: 40px 0; }
+    body main #article div p {
+      line-height: 1.8; }
+      body main #article div p span:first-child {
+        font-style: italic; }
+      body main #article div p span:last-child {
+        text-decoration: underline; }
+  body footer hr {
+    margin: 100px 0 0 0; }
+
+.show {
+  display: block !important;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+#modal_form {
+  width: 570px;
+  height: 330px;
+  background: #fff;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -285px;
+  display: none;
+  opacity: 0;
+  z-index: 5; }
+  #modal_form p {
+    margin: 85px auto;
+    color: #646464; }
+
+#modal_form #modal_close {
+  font-size: 25px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+  color: black; }
+
+#overlay {
+  z-index: 3;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none; }
+
+#modal_form_mobile {
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  background: #fff;
+  top: 50%;
+  display: none;
+  opacity: 0;
+  z-index: 5; }
+  #modal_form_mobile p {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 50px 0;
+    text-align: center;
+    color: #646464; }
+  #modal_form_mobile form {
+    text-align: center; }
+    #modal_form_mobile form input {
+      outline: none;
+      height: 50px;
+      width: 95%;
+      border: 1px solid #646464;
+      border-radius: 5px;
+      margin-bottom: 20px; }
+      #modal_form_mobile form input::-webkit-input-placeholder {
+        font-size: 20px;
+        text-align: center; }
+      #modal_form_mobile form input:-ms-input-placeholder {
+        font-size: 20px;
+        text-align: center; }
+      #modal_form_mobile form input::placeholder {
+        font-size: 20px;
+        text-align: center; }
+  #modal_form_mobile button {
+    margin: auto;
+    width: 170px;
+    height: 50px;
+    background-color: #615e5e;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    display: block; }
+
+#modal_form_mobile #modal_close_mobile {
+  font-size: 25px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+  color: black; }
+
+#overlay_mobile {
+  z-index: 3;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none; }
+
+.modal_mobile {
+  display: none;
+  margin: 20px auto 0;
+  width: 170px;
+  height: 50px;
+  background-color: #615e5e;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative; }
+
+.active {
+  color: blue !important; }
+
+@media only screen and (max-width: 1015px) {
+  body main #columns .columnsboxes {
+    width: 840px; }
+    body main #columns .columnsboxes div {
+      width: 240px; }
+
+  body header .menu li:not(:first-child) {
+    margin-left: 5px; } }
+@media only screen and (max-width: 855px) {
+  body main #columns .columnsboxes {
+    width: 550px; }
+    body main #columns .columnsboxes div {
+      width: 275px; }
+
+  body header .logo {
+    padding-left: 10px; }
+
+  body header .menu {
+    padding-right: 10px; } }
+@media only screen and (max-width: 785px) {
+  body main #article {
+    width: 620px; }
+
+  body main .sliderContainer__buttons_next {
+    margin-right: 5px; }
+
+  body main .sliderContainer__buttons_prev, body main .sliderContainer__buttons_next {
+    margin-left: 5px; }
+
+  body main .smallsliderContainer__slides li {
+    margin: 0; }
+
+  body main .smallsliderContainer__buttons_next {
+    display: none; }
+
+  body main .smallsliderContainer__buttons_prev {
+    display: none; }
+
+  body main .buttonsToClick {
+    display: block; }
+
+  body header .logo span {
+    padding-left: 5px; } }
+@media only screen and (max-width: 680px) {
+  body header .logo,
+  body header .menu {
+    line-height: inherit;
+    text-align: center;
+    float: none;
+    padding: 20px 0 0 0; }
+
+  body header {
+    height: 140px; } }
+@media only screen and (max-width: 640px) {
+  body main .sliderContainer__buttons_prev, body main .sliderContainer__buttons_next,
+  body main .sliderContainer__buttons_next {
+    top: 62%; }
+
+  body main #article {
+    width: 90%; }
+
+  body #modal_form {
+    margin-left: -200px;
+    width: 400px; }
+
+  body main .sliderContainer__slides li div p {
+    width: 400px; }
+
+  body main #columns .columnsboxes {
+    width: 400px; }
+
+  body main #columns .columnsboxes div {
+    width: 200px; } }
+@media only screen and (max-width: 540px) {
+  body main .sliderContainer__slides li div p {
+    width: 310px; }
+
+  body main .sliderContainer__buttons_next,
+  body main .sliderContainer__buttons_prev,
+  body main .sliderContainer__buttons_next {
+    top: 76%; } }
+@media only screen and (max-width: 430px) {
+  body header {
+    height: 320px; }
+
+  body header .logo,
+  body header .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    body header .logo li,
+    body header .menu ul li {
+      padding-bottom: 20px; }
+
+  body header .logo span {
+    padding-top: 20px; }
+
+  body main #columns .columnsboxes {
+    width: 310px; }
+    body main #columns .columnsboxes div {
+      width: 310px; }
+
+  body main .sliderContainer,
+  body main .container,
+  body main .buttonsToClick {
+    display: none; }
+
+  .modal_mobile {
+    display: block; } }
